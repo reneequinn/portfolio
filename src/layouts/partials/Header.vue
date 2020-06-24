@@ -6,9 +6,9 @@
     >
       <g-link
         to="/"
-        class="text-xl font-bold border-b-2 border-transparent hover:border-white"
+        class="text-xl font-bold border-b-2 border-transparent transition-colors ease-in duration-200 hover:border-white"
       >
-        <h1><span class="text-pink-500">Renee </span><span>Quinn</span></h1>
+        <h1><span class="text-pink-400">Renee </span><span>Quinn</span></h1>
       </g-link>
       <div class="block lg:hidden">
         <button
@@ -28,12 +28,12 @@
         class="w-full flex-grow lg:flex lg:items-center lg:w-auto"
         id="navigation"
       >
-        <ul class="items-center ml-auto text-center lg:flex ">
+        <ul class="items-center ml-auto text-center lg:flex">
           <li class="my-3 lg:my-0 lg:mr-8">
             <a
               href="/"
               vue-scroll-to="'/'"
-              class="block lg:py-0 border-b-2 border-transparent hover:border-white lg:inline-block"
+              class="block bg-gray-800 py-1 rounded border-b-2 border-transparent transition-colors ease-in duration-200 hover:bg-gray-900 lg:rounded-none lg:hover:border-white lg:inline-block lg:bg-transparent lg:py-0"
               >Home</a
             >
           </li>
@@ -41,7 +41,7 @@
             <a
               href="#about"
               vue-scroll-to="'#about'"
-              class="block lg:py-0 border-b-2 border-transparent hover:border-white lg:inline-block"
+              class="block bg-gray-800 py-1 rounded border-b-2 border-transparent transition-colors ease-in duration-200 hover:bg-gray-900 lg:rounded-none lg:hover:border-white lg:inline-block lg:bg-transparent lg:py-0"
               >About</a
             >
           </li>
@@ -49,7 +49,7 @@
             <a
               href="#portfolio"
               vue-scroll-to="'#portfolio'"
-              class="block lg:py-0 border-b-2 border-transparent hover:border-white lg:inline-block"
+              class="block bg-gray-800 py-1 rounded border-b-2 border-transparent transition-colors ease-in duration-200 hover:bg-gray-900 lg:rounded-none lg:hover:border-white lg:inline-block lg:bg-transparent lg:py-0"
               >Portfolio</a
             >
           </li>
@@ -57,7 +57,7 @@
             <a
               href="#contact"
               vue-scroll-to="'#contact'"
-              class="block lg:py-0 border-b-2 border-transparent hover:border-white lg:inline-block"
+              class="block bg-gray-800 py-1 rounded border-b-2 border-transparent transition-colors ease-in duration-200 hover:bg-gray-900 lg:rounded-none lg:hover:border-white lg:inline-block lg:bg-transparent lg:py-0"
               >Contact</a
             >
           </li>
@@ -85,7 +85,7 @@ export default {
 <style>
 .header-border {
   padding: 2px;
-  background: linear-gradient(to right, #ed64a6, #9f7aea, #4fd1c5);
+  background: linear-gradient(to right, #f687b3, #b794f4, #4fd1c5);
 }
 
 .nav-button {
@@ -106,6 +106,10 @@ export default {
   transform: rotate(0deg);
   transform-origin: left center;
   transition: 0.25s ease-in-out;
+}
+
+.nav-button:hover span {
+  background: #f5f5f5;
 }
 
 .nav-button span:nth-child(1) {

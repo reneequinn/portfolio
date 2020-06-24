@@ -1,13 +1,17 @@
 <template>
   <Layout>
-    <h1>Test</h1>
+    <Hero />
   </Layout>
 </template>
 
 <script>
+import Hero from '../components/Hero';
 export default {
   metaInfo: {
     title: 'Home',
+  },
+  components: {
+    Hero,
   },
 };
 </script>
