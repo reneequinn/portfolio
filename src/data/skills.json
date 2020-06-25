@@ -1,0 +1,31 @@
+{
+  "list": [
+    {
+      "name": "Web Development",
+      "icon": "icon-webdev",
+      "items": ["HTML", "CSS", "JavaScript ES6+", "PHP", "MySQL"]
+    },
+    {
+      "name": "Front End Frameworks",
+      "icon": "icon-frontend",
+      "items": [
+        "Tailwind CSS",
+        "Vue.js",
+        "Gridsome",
+        "Bootstrap",
+        "AngularJS",
+        "Bulma"
+      ]
+    },
+    {
+      "name": "Design",
+      "icon": "icon-design",
+      "items": ["Adobe XD", "Photoshop", "Illustrator"]
+    },
+    {
+      "name": "Tools and Technologies",
+      "icon": "icon-tech",
+      "items": ["Git", "GitHub", "NPM", "VS Code"]
+    }
+  ]
+}
