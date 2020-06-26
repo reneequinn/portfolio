@@ -2,12 +2,12 @@
   "list": [
     {
       "name": "Web Development",
-      "icon": "icon-webdev",
+      "icon": "icon-coding",
       "items": ["HTML", "CSS", "JavaScript ES6+", "PHP", "MySQL"]
     },
     {
       "name": "Front End Frameworks",
-      "icon": "icon-frontend",
+      "icon": "icon-browser",
       "items": [
         "Tailwind CSS",
         "Vue.js",
@@ -24,7 +24,7 @@
     },
     {
       "name": "Tools and Technologies",
-      "icon": "icon-tech",
+      "icon": "icon-settings",
       "items": ["Git", "GitHub", "NPM", "VS Code"]
     }
   ]

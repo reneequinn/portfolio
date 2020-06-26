@@ -30,17 +30,30 @@
         <h3 class="text-2xl font-bold mb-4">My Skills</h3>
       </div>
       <div class="lg:grid grid-cols-2 gap-4">
-        <div v-for="skill in skills.list" :key="skill" class="mb-4">
-          <h4 class="text-xl font-bold text-gray-100 mb-2">{{ skill.name }}</h4>
-          <ul class="flex flex-wrap">
-            <li
-              v-for="item in skill.items"
-              :key="item"
-              class="mr-2 mb-2 px-3 py-1 text-black bg-teal-300 rounded-full text-sm"
-            >
-              {{ item }}
-            </li>
-          </ul>
+        <div v-for="skill in skills.list" :key="skill" class="my-4">
+          <div class="grid grid-cols-4 gap-4">
+            <div class="col-span-1 flex items-center justify-center">
+              <icon-base class="stroke-current text-gray-700 w-32 h-32"
+                ><component :is="skill.icon"
+              /></icon-base>
+            </div>
+            <div class="col-span-3 text-center md:text-left">
+              <h4 class="text-xl font-bold text-gray-100 mb-2">
+                {{ skill.name }}
+              </h4>
+              <ul
+                class="flex items-start justify-center md:justify-start flex-wrap"
+              >
+                <li
+                  v-for="item in skill.items"
+                  :key="item"
+                  class="mr-2 mb-2 px-3 py-1 text-black bg-teal-300 rounded-full text-sm flex-grow-0"
+                >
+                  {{ item }}
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -49,7 +62,20 @@
 
 <script>
 import skills from '@/data/skills.json';
+import IconBase from './icons/IconBase.vue';
+import IconBrowser from './icons/IconBrowser.vue';
+import IconCoding from './icons/IconCoding.vue';
+import IconDesign from './icons/IconDesign.vue';
+import IconSettings from './icons/IconSettings.vue';
+
 export default {
+  components: {
+    IconBase,
+    IconBrowser,
+    IconCoding,
+    IconDesign,
+    IconSettings,
+  },
   data() {
     return {
       skills,
