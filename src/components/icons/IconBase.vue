@@ -18,22 +18,20 @@
 export default {
   props: {
     iconName: {
-      iconName: {
-        type: String,
-        default: 'box',
-      },
-      width: {
-        type: [Number, String],
-        default: 50,
-      },
-      height: {
-        type: [Number, String],
-        default: 62.5,
-      },
-      iconColor: {
-        type: String,
-        default: 'currentColor',
-      },
+      type: String,
+      default: 'box',
+    },
+    width: {
+      type: [Number, String],
+      default: 50,
+    },
+    height: {
+      type: [Number, String],
+      default: 62.5,
+    },
+    iconColor: {
+      type: String,
+      default: 'currentColor',
     },
   },
 };

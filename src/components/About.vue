@@ -29,23 +29,28 @@
       <div>
         <h3 class="text-2xl font-bold mb-4">My Skills</h3>
       </div>
+
       <div class="lg:grid grid-cols-2 gap-4">
-        <div v-for="skill in skills.list" :key="skill" class="my-4">
+        <div
+          v-for="skill in $static.skillsList.edges"
+          :key="skill.node.id"
+          class="my-4"
+        >
           <div class="grid grid-cols-4 gap-4">
             <div class="col-span-1 flex items-center justify-center">
               <icon-base class="stroke-current text-gray-700 w-32 h-32"
-                ><component :is="skill.icon"
+                ><component :is="skill.node.icon"
               /></icon-base>
             </div>
             <div class="col-span-3 text-center md:text-left">
               <h4 class="text-xl font-bold text-gray-100 mb-2">
-                {{ skill.name }}
+                {{ skill.node.name }}
               </h4>
               <ul
                 class="flex items-start justify-center md:justify-start flex-wrap"
               >
                 <li
-                  v-for="item in skill.items"
+                  v-for="item in skill.node.items"
                   :key="item"
                   class="mr-2 mb-2 px-3 py-1 text-black bg-teal-300 rounded-full text-sm flex-grow-0"
                 >
@@ -60,8 +65,22 @@
   </section>
 </template>
 
+<static-query>
+query {
+  skillsList: allSkillsList (order: ASC) {
+    edges {
+      node {
+        id,
+        name,
+        icon,
+        items
+      }
+    }
+  }
+}
+</static-query>
+
 <script>
-import skills from '@/data/skills.json';
 import IconBase from './icons/IconBase.vue';
 import IconBrowser from './icons/IconBrowser.vue';
 import IconCoding from './icons/IconCoding.vue';
@@ -75,11 +94,6 @@ export default {
     IconCoding,
     IconDesign,
     IconSettings,
-  },
-  data() {
-    return {
-      skills,
-    };
   },
 };
 </script>

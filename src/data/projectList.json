@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Playford Men's Shed",
+    "tags": ["Gridsome", "Vue.js", "Tailwind CSS", "Google Maps API"],
+    "description": "A website for the Playford Men's Shed community  group. I used the Vue.js static site generator Gridsome, to create a super-fast, accessibly and SEO-friendly website.\r\rThe site was created as part of my TAFE SA Workplace Project, where we create products for real clients.",
+    "imgUrl": "@/assets/img/playford-mens-shed.png",
+    "imgAlt": "Preview of the Playford Men's Shed website",
+    "demoUrl": "https://playfordms.netlify.app/"
+  },
+  {
+    "name": "Dev Domain",
+    "tags": ["AngularJS", "PHP", "MySQL", "Tailwind CSS", "Google Maps API"],
+    "description": "A website for a fictional developer community. This site has a membership registration and log in functionality that allows users to update their details. Sessions are used to maintain logged in status.<br />AngularJS is used to handle dynamic form validation and HTTP requests to a PHP script that connects to the database.<br />A select number of tweets are pulled in on the News page using the Twitter for Websites API. Event information is pulled in from the database, and Google Maps is used to display event locations.",
+    "imgUrl": "@/assets/img/dev-domain.png",
+    "imgAlt": "Preview of Dev Domain website",
+    "demoUrl": "https://shrouded-escarpment-47748.herokuapp.com/"
+  },
+  {
+    "name": "Damn Fine Coffee",
+    "tags": ["PHP", "MySQL", "Tailwind CSS", "JavaScript", "AngularJS"],
+    "description": "An e-commerce site for a fictional online business that specialises in coffee beans and brewing equipment. Build in PHP, the site uses sessions to maintain logged in status and cart state.<br />Products can be viewed on te store page, or through an AJAX search input. The search function generates suggestions that link to products as the user types. A search results page displays all matching product listings. Users can add a single item from the store and search views. More information and the ability to select quantity is available on a dynamically generated product page.<br />The shopping cart allows for users to remove items as well as change the quantity. A logged in user can complete their transaction using PayPal in sandbox mode. Users can see their order history from their member page while logged in.",
+    "imgUrl": "@/assets/img/damn-fine-coffee.png",
+    "imgAlt": "Preview of Damn Fine Coffee website",
+    "demoUrl": "https://tranquil-plateau-75150.herokuapp.com/"
+  }
+]

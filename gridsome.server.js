@@ -5,12 +5,27 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
-module.exports = function (api) {
-  api.loadSource(({ addCollection }) => {
-    // Use the Data Store API here: https://gridsome.org/docs/data-store-api/
-  })
+module.exports = function(api) {
+  api.loadSource(async (actions) => {
+    // skills
+    const skillsList = require('./src/data/skills.json');
+    const skillsCollection = actions.addCollection({
+      typeName: 'skillsList',
+    });
+    for (const skillItem of skillsList) {
+      skillsCollection.addNode(skillItem);
+    }
+    // project list
+    const ProjectList = require('./src/data/projectList.json');
+    const projectCollection = actions.addCollection({
+      typeName: 'ProjectList',
+    });
+    for (const projectItem of ProjectList) {
+      projectCollection.addNode(projectItem);
+    }
+  });
 
   api.createPages(({ createPage }) => {
     // Use the Pages API here: https://gridsome.org/docs/pages-api/
-  })
-}
+  });
+};
