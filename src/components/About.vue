@@ -1,5 +1,5 @@
 <template>
-  <section id="about" class="container mx-auto my-6 p-4">
+  <section id="about" class="container mx-auto lg:mb-6 p-4">
     <div class="lg:grid grid-cols-4 gap-4">
       <div
         class="my-6 col-span-1 flex items-center justify-center lg:justify-start"
@@ -25,9 +25,9 @@
         </p>
       </div>
     </div>
-    <div class="my-6">
+    <div class="mt-6">
       <div>
-        <h3 class="text-2xl font-bold mb-4">My Skills</h3>
+        <h3 class="text-2xl font-bold">My Skills</h3>
       </div>
 
       <div class="lg:grid grid-cols-2 gap-4">

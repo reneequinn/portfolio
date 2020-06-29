@@ -2,9 +2,27 @@
   <Layout>
     <Hero />
     <About />
-    <Projects />
+    <Projects :projectList="$page.projectList.edges" />
   </Layout>
 </template>
+
+<page-query>
+query {
+  projectList: allProjectList(order: ASC) {
+    edges {
+      node {
+        id,
+        name,
+        tags,
+        description,
+        imgFile,
+        imgAlt,
+        demoUrl
+      }
+    }
+  }
+}
+</page-query>
 
 <script>
 import Hero from '../components/Hero';

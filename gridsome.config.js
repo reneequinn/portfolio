@@ -11,4 +11,7 @@ module.exports = {
       use: 'gridsome-plugin-tailwindcss',
     },
   ],
+  chainWebpack: (config) => {
+    config.resolve.alias.set('@img', '@/assets/img');
+  },
 };

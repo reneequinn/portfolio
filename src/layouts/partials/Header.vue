@@ -1,15 +1,16 @@
 <template>
-  <header class="bg-gray-900 sticky shadow">
+  <header id="page-top" class="bg-gray-900 sticky top-0 shadow">
     <div class="header-border"></div>
     <div
       class="container mx-auto flex flex-wrap justify-between items-center py-6 px-4"
     >
-      <g-link
-        to="/"
+      <a
+        href="#page-top"
+        v-scroll-to="'#page-top'"
         class="text-xl font-bold border-b-2 border-transparent transition-colors ease-in duration-200 hover:border-white"
       >
         <h1><span class="text-pink-400">Renee </span><span>Quinn</span></h1>
-      </g-link>
+      </a>
       <div class="block lg:hidden">
         <button
           @click="toggleMenu"
@@ -31,32 +32,32 @@
         <ul class="items-center ml-auto text-center lg:flex">
           <li class="my-3 lg:my-0 lg:mr-8">
             <a
-              href="/"
-              vue-scroll-to="'/'"
+              href="#page-top"
+              v-scroll-to="'#page-top'"
               class="block bg-gray-800 py-1 rounded border-b-2 border-transparent transition-colors ease-in duration-200 hover:bg-gray-900 lg:rounded-none lg:hover:border-white lg:inline-block lg:bg-transparent lg:py-0"
               >Home</a
             >
           </li>
           <li class="my-3 lg:my-0 lg:mr-8">
             <a
-              href="#about"
-              vue-scroll-to="'#about'"
+              href="/#about"
+              v-scroll-to="'#about'"
               class="block bg-gray-800 py-1 rounded border-b-2 border-transparent transition-colors ease-in duration-200 hover:bg-gray-900 lg:rounded-none lg:hover:border-white lg:inline-block lg:bg-transparent lg:py-0"
               >About</a
             >
           </li>
           <li class="my-3 lg:my-0 lg:mr-8">
             <a
-              href="#portfolio"
-              vue-scroll-to="'#portfolio'"
+              href="/#portfolio"
+              v-scroll-to="'#portfolio'"
               class="block bg-gray-800 py-1 rounded border-b-2 border-transparent transition-colors ease-in duration-200 hover:bg-gray-900 lg:rounded-none lg:hover:border-white lg:inline-block lg:bg-transparent lg:py-0"
               >Portfolio</a
             >
           </li>
           <li class="my-3 lg:my-0">
             <a
-              href="#contact"
-              vue-scroll-to="'#contact'"
+              href="/#contact"
+              v-scroll-to="'#contact'"
               class="block bg-gray-800 py-1 rounded border-b-2 border-transparent transition-colors ease-in duration-200 hover:bg-gray-900 lg:rounded-none lg:hover:border-white lg:inline-block lg:bg-transparent lg:py-0"
               >Contact</a
             >
