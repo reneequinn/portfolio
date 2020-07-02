@@ -2,32 +2,16 @@
   <Layout>
     <Hero />
     <About />
-    <Projects :projectList="$page.projectList.edges" />
+    <Projects />
+    <Contact />
   </Layout>
 </template>
-
-<page-query>
-query {
-  projectList: allProjectList(order: ASC) {
-    edges {
-      node {
-        id,
-        name,
-        tags,
-        description,
-        imgFile,
-        imgAlt,
-        demoUrl
-      }
-    }
-  }
-}
-</page-query>
 
 <script>
 import Hero from '../components/Hero';
 import About from '../components/About';
 import Projects from '../components/Projects';
+import Contact from '../components/Contact';
 
 export default {
   metaInfo: {
@@ -37,6 +21,7 @@ export default {
     Hero,
     About,
     Projects,
+    Contact,
   },
 };
 </script>

@@ -1,21 +1,21 @@
 <template>
-  <section id="portfolio" class="container mx-auto lg:mb-6 p-4">
-    <div>
+  <section id="portfolio" class="container mx-auto lg:my-6 p-4">
+    <div class="text-center">
       <h3 class="text-2xl font-bold mb-4">My Work</h3>
     </div>
-    <div>
+    <div class="mt-4">
       <div
-        v-for="project in projectList"
+        v-for="project in $static.projectList.edges"
         :key="project.node.id"
-        class="projectBox lg:flex items-center justify-between bg-gray-900 mb-4 rounded"
+        class="projectBox xl:flex items-center justify-between bg-gray-900 mb-6 rounded"
       >
-        <div class="overflow-hidden lg:w-1/2">
+        <div class="overflow-hidden xl:w-1/2">
           <g-image
             :src="require(`!!assets-loader!@img/${project.node.imgFile}`)"
             :alt="project.node.imgAlt"
           />
         </div>
-        <div class="py-4 px-6 lg:w-1/2">
+        <div class="py-4 px-6 xl:w-1/2">
           <h4 class="text-xl font-bold mb-2">{{ project.node.name }}</h4>
           <ul class="flex items-start justify-start flex-wrap mb-2">
             <li
@@ -33,22 +33,35 @@
           >
             {{ desc }}
           </p>
+          <a
+            :href="project.node.demoUrl"
+            class="btn-gradient inline-block text-black font-bold tracking-wider uppercase rounded mt-2 px-3 py-1"
+            target="_blank"
+            >Visit site</a
+          >
         </div>
       </div>
     </div>
   </section>
 </template>
 
-<script>
-export default {
-  props: {
-    projectList: {
-      type: Array,
-      required: true,
-    },
-  },
-};
-</script>
+<static-query>
+query {
+  projectList: allProjectList(order: ASC) {
+    edges {
+      node {
+        id,
+        name,
+        tags,
+        description,
+        imgFile,
+        imgAlt,
+        demoUrl
+      }
+    }
+  }
+}
+</static-query>
 
 <style>
 .projectBox:nth-of-type(2) {

@@ -47,7 +47,7 @@ query {
   width: 100%;
   z-index: -1;
   opacity: 0;
-  transition: opacity 0.2s ease;
+  transition: opacity 0.3s ease-in;
 }
 
 .btn-gradient:hover:before {

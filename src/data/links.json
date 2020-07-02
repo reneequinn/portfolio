@@ -1,0 +1,22 @@
+[
+  {
+    "label": "CodePen Profile",
+    "icon": "icon-codepen",
+    "link": "#"
+  },
+  {
+    "label": "Github Profile",
+    "icon": "icon-github",
+    "link": "#"
+  },
+  {
+    "label": "YouTube Channel",
+    "icon": "icon-youtube",
+    "link": "#"
+  },
+  {
+    "label": "LinkedIn Profile",
+    "icon": "icon-linkedin",
+    "link": "#"
+  }
+]

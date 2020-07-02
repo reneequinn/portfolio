@@ -23,6 +23,14 @@ module.exports = function(api) {
     for (const projectItem of ProjectList) {
       projectCollection.addNode(projectItem);
     }
+    // contact links
+    const ContactList = require('./src/data/links.json');
+    const contactCollection = actions.addCollection({
+      typeName: 'ContactList',
+    });
+    for (const contactItem of ContactList) {
+      contactCollection.addNode(contactItem);
+    }
   });
 
   api.createPages(({ createPage }) => {

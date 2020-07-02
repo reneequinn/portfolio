@@ -1,7 +1,13 @@
 [
   {
     "name": "Playford Men's Shed",
-    "tags": ["Gridsome", "Vue.js", "Tailwind CSS", "Google Maps API"],
+    "tags": [
+      "Gridsome",
+      "Vue.js",
+      "GraphQL",
+      "Tailwind CSS",
+      "Google Maps API"
+    ],
     "description": [
       "A website for the Playford Men's Shed community  group. I used the Vue.js static site generator Gridsome, to create a super-fast, accessibly and SEO-friendly website.",
       "A GraphQL query is used to pull in project images and information. The contact page has dynamic form validation and a Google Map for the location.",
@@ -27,9 +33,9 @@
     "name": "Damn Fine Coffee",
     "tags": ["PHP", "MySQL", "Tailwind CSS", "JavaScript", "AngularJS"],
     "description": [
-      "An e-commerce site for a fictional online business that specialises in coffee beans and brewing equipment. Build in PHP, the site uses sessions to maintain logged in status and cart state.",
-      "Products can be viewed on te store page, or through an AJAX search input. The search function generates suggestions that link to products as the user types, as well as generating a results page with all matching products. Each individual product page is generated from a single template that pulls in data using the product ID.",
-      "The shopping cart allows for users to remove items as well as change the quantity. A logged in user can complete their transaction using PayPal in sandbox mode. Users can see their order history from their member page while logged in."
+      "An e-commerce site for a fictional online business that specialises in coffee beans and brewing equipment. Built in PHP, the site uses sessions to maintain logged in status and cart state.",
+      "Products can be viewed on te store page, or through an AJAX search input. The search function generates suggestions that link to products as the user types, as well as generating a results page with all matching products.",
+      "The shopping cart allows for users to change the quantity and remove items. A logged in user can checkout using PayPal in sandbox mode. Users can also see their order history."
     ],
     "imgFile": "damn-fine-coffee.png",
     "imgAlt": "Preview of Damn Fine Coffee website",

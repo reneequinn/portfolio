@@ -1,12 +1,12 @@
 <template>
-  <header id="page-top" class="bg-gray-900 sticky top-0 shadow">
+  <header class="bg-gray-900 sticky top-0 shadow z-10">
     <div class="header-border"></div>
     <div
       class="container mx-auto flex flex-wrap justify-between items-center py-6 px-4"
     >
       <a
-        href="#page-top"
-        v-scroll-to="'#page-top'"
+        href="/#home"
+        v-scroll-to="'#home'"
         class="text-xl font-bold border-b-2 border-transparent transition-colors ease-in duration-200 hover:border-white"
       >
         <h1><span class="text-pink-400">Renee </span><span>Quinn</span></h1>
@@ -32,8 +32,8 @@
         <ul class="items-center ml-auto text-center lg:flex">
           <li class="my-3 lg:my-0 lg:mr-8">
             <a
-              href="#page-top"
-              v-scroll-to="'#page-top'"
+              href="/#home"
+              v-scroll-to="'#home'"
               class="block bg-gray-800 py-1 rounded border-b-2 border-transparent transition-colors ease-in duration-200 hover:bg-gray-900 lg:rounded-none lg:hover:border-white lg:inline-block lg:bg-transparent lg:py-0"
               >Home</a
             >

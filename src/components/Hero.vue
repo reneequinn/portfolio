@@ -1,5 +1,5 @@
 <template>
-  <section class="container mx-auto flex my-6 p-4">
+  <section id="home" class="container mx-auto flex my-6 p-4">
     <div class="lg:grid grid-cols-2 gap-4">
       <div
         class="my-6 text-center lg:text-left flex flex-col justify-center px-4 lg:px-0"
@@ -13,7 +13,7 @@
         <div class="my-6">
           <a
             href="#portfolio"
-            vue-scrollto="'#portfolio'"
+            v-scroll-to="'#portfolio'"
             class="btn-gradient inline-block text-black font-bold tracking-wider uppercase text-lg rounded px-4 py-2"
           >
             See my work

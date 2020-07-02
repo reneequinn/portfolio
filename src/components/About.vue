@@ -1,5 +1,5 @@
 <template>
-  <section id="about" class="container mx-auto lg:mb-6 p-4">
+  <section id="about" class="container mx-auto lg:my-6 p-4">
     <div class="lg:grid grid-cols-4 gap-4">
       <div
         class="my-6 col-span-1 flex items-center justify-center lg:justify-start"
@@ -26,7 +26,7 @@
       </div>
     </div>
     <div class="mt-6">
-      <div>
+      <div class="text-center">
         <h3 class="text-2xl font-bold">My Skills</h3>
       </div>
 
@@ -38,9 +38,10 @@
         >
           <div class="grid grid-cols-4 gap-4">
             <div class="col-span-1 flex items-center justify-center">
-              <icon-base class="stroke-current text-gray-700 w-32 h-32"
-                ><component :is="skill.node.icon"
-              /></icon-base>
+              <component
+                :is="skill.node.icon"
+                class="stroke-current text-gray-700 w-32 h-32"
+              />
             </div>
             <div class="col-span-3 text-center md:text-left">
               <h4 class="text-xl font-bold text-gray-100 mb-2">
@@ -81,7 +82,6 @@ query {
 </static-query>
 
 <script>
-import IconBase from './icons/IconBase.vue';
 import IconBrowser from './icons/IconBrowser.vue';
 import IconCoding from './icons/IconCoding.vue';
 import IconDesign from './icons/IconDesign.vue';
@@ -89,7 +89,6 @@ import IconSettings from './icons/IconSettings.vue';
 
 export default {
   components: {
-    IconBase,
     IconBrowser,
     IconCoding,
     IconDesign,
