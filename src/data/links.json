@@ -2,21 +2,31 @@
   {
     "label": "CodePen Profile",
     "icon": "icon-codepen",
-    "link": "#"
+    "link": "https://codepen.io/reneequinn",
+    "rel": "external"
   },
   {
     "label": "Github Profile",
     "icon": "icon-github",
-    "link": "#"
+    "link": "https://github.com/reneequinn",
+    "rel": "external"
   },
   {
     "label": "YouTube Channel",
     "icon": "icon-youtube",
-    "link": "#"
+    "link": "https://www.youtube.com/channel/UCPHeSyxrThKBgto19wY95cw",
+    "rel": "external"
   },
   {
     "label": "LinkedIn Profile",
     "icon": "icon-linkedin",
-    "link": "#"
+    "link": "https://www.linkedin.com/in/renee-quinn/",
+    "rel": "external"
+  },
+  {
+    "label": "Email Me",
+    "icon": "icon-envelope",
+    "link": "mailto:hello@reneequinn.dev",
+    "rel": "noopener noreferrer"
   }
 ]

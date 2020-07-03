@@ -4,7 +4,11 @@
       <h3 class="text-2xl font-bold mb-4">Contact</h3>
       <p class="text-gray-100 mb-2">
         To get in touch, email me:
-        <a href="mailto:hello@reneequinn.dev" class="text-pink-400 underline"
+        <a
+          href="mailto:hello@reneequinn.dev"
+          class="text-pink-400 underline hover:text-pink-500 transition ease-in duration-200"
+          target="_blank"
+          rel="noopener noreferrer"
           >hello[at]reneequinn.dev</a
         >
       </p>
@@ -18,6 +22,8 @@
           :href="link.node.link"
           :aria-label="link.node.label"
           class="mx-2 p-1 hover:text-gray-300 transition ease-in duration-200"
+          target="_blank"
+          :rel="link.node.rel"
         >
           <component :is="link.node.icon" class="w-8 h-8 fill-current" />
         </a>
@@ -28,12 +34,13 @@
 
 <static-query>
 query {
-  contactList: allContactList (order: ASC) {
+  contactList: allContactList (order: ASC, filter: {label: {nin: "Email Me"}}) {
     edges {
       node {
         label
         icon
         link
+        rel
       }
     }
   }

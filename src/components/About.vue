@@ -13,7 +13,7 @@
       <div class="my-6 col-span-3 flex flex-col justify-center">
         <h3 class="text-2xl font-bold">Hi, I'm Renee</h3>
         <p class="mt-4 text-gray-100">
-          I'm a front end developer with a passion for well-designed user
+          I'm a front-end developer with a passion for well-designed user
           experiences on the web. I specialise in HTML, CSS and JavaScript, and
           love using VueJS and Tailwind CSS. In addition to developing web apps,
           I plan and design user interfaces with Adobe XD.

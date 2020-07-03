@@ -5,7 +5,7 @@
     "items": ["HTML", "CSS", "JavaScript ES6+", "PHP", "MySQL"]
   },
   {
-    "name": "Front End Frameworks",
+    "name": "Front-End Frameworks",
     "icon": "icon-browser",
     "items": [
       "Tailwind CSS",

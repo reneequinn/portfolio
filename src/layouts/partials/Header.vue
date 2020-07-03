@@ -5,12 +5,21 @@
       class="container mx-auto flex flex-wrap justify-between items-center py-6 px-4"
     >
       <a
+        v-if="$route.path === '/'"
         href="/#home"
         v-scroll-to="'#home'"
         class="text-xl font-bold border-b-2 border-transparent transition-colors ease-in duration-200 hover:border-white"
       >
         <h1><span class="text-pink-400">Renee </span><span>Quinn</span></h1>
       </a>
+      <g-link
+        v-else
+        to="/"
+        class="text-xl font-bold border-b-2 border-transparent transition-colors ease-in duration-200 hover:border-white"
+        ><h1>
+          <span class="text-pink-400">Renee </span><span>Quinn</span>
+        </h1></g-link
+      >
       <div class="block lg:hidden">
         <button
           @click="toggleMenu"
@@ -32,34 +41,62 @@
         <ul class="items-center ml-auto text-center lg:flex">
           <li class="my-3 lg:my-0 lg:mr-8">
             <a
+              v-if="$route.path === '/'"
               href="/#home"
               v-scroll-to="'#home'"
               class="block bg-gray-800 py-1 rounded border-b-2 border-transparent transition-colors ease-in duration-200 hover:bg-gray-900 lg:rounded-none lg:hover:border-white lg:inline-block lg:bg-transparent lg:py-0"
               >Home</a
             >
+            <g-link
+              v-else
+              to="/"
+              class="block bg-gray-800 py-1 rounded border-b-2 border-transparent transition-colors ease-in duration-200 hover:bg-gray-900 lg:rounded-none lg:hover:border-white lg:inline-block lg:bg-transparent lg:py-0"
+              >Home</g-link
+            >
           </li>
           <li class="my-3 lg:my-0 lg:mr-8">
             <a
+              v-if="$route.path === '/'"
               href="/#about"
               v-scroll-to="'#about'"
               class="block bg-gray-800 py-1 rounded border-b-2 border-transparent transition-colors ease-in duration-200 hover:bg-gray-900 lg:rounded-none lg:hover:border-white lg:inline-block lg:bg-transparent lg:py-0"
               >About</a
             >
+            <g-link
+              v-else
+              to="/#about"
+              class="block bg-gray-800 py-1 rounded border-b-2 border-transparent transition-colors ease-in duration-200 hover:bg-gray-900 lg:rounded-none lg:hover:border-white lg:inline-block lg:bg-transparent lg:py-0"
+              >About</g-link
+            >
           </li>
           <li class="my-3 lg:my-0 lg:mr-8">
             <a
+              v-if="$route.path === '/'"
               href="/#portfolio"
               v-scroll-to="'#portfolio'"
               class="block bg-gray-800 py-1 rounded border-b-2 border-transparent transition-colors ease-in duration-200 hover:bg-gray-900 lg:rounded-none lg:hover:border-white lg:inline-block lg:bg-transparent lg:py-0"
               >Portfolio</a
             >
+            <g-link
+              v-else
+              to="/#portfolio"
+              class="block bg-gray-800 py-1 rounded border-b-2 border-transparent transition-colors ease-in duration-200 hover:bg-gray-900 lg:rounded-none lg:hover:border-white lg:inline-block lg:bg-transparent lg:py-0"
+              >Portfolio</g-link
+            >
           </li>
           <li class="my-3 lg:my-0">
             <a
+              v-if="$route.path === '/'"
               href="/#contact"
               v-scroll-to="'#contact'"
               class="block bg-gray-800 py-1 rounded border-b-2 border-transparent transition-colors ease-in duration-200 hover:bg-gray-900 lg:rounded-none lg:hover:border-white lg:inline-block lg:bg-transparent lg:py-0"
               >Contact</a
+            >
+            <g-link
+              v-else
+              to="/#contact"
+              class="block bg-gray-800 py-1 rounded border-b-2 border-transparent transition-colors ease-in duration-200 hover:bg-gray-900 lg:rounded-none lg:hover:border-white lg:inline-block lg:bg-transparent lg:py-0"
+              >Contact</g-link
             >
           </li>
         </ul>
