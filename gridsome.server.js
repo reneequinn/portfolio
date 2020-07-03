@@ -31,6 +31,14 @@ module.exports = function(api) {
     for (const contactItem of ContactList) {
       contactCollection.addNode(contactItem);
     }
+    // credits
+    const CreditList = require('./src/data/credits.json');
+    const creditCollection = actions.addCollection({
+      typeName: 'CreditList',
+    });
+    for (const creditItem of CreditList) {
+      creditCollection.addNode(creditItem);
+    }
   });
 
   api.createPages(({ createPage }) => {

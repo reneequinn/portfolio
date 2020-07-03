@@ -4,6 +4,17 @@
       <div>
         <small
           >&copy; Copyright {{ new Date().getFullYear() }} Renee Quinn</small
+        ><br />
+        <a
+          href="/sitemap.xml"
+          class="text-sm underline hover:text-pink-400 transition ease-in duration-200"
+          >Sitemap</a
+        >
+        <span> | </span
+        ><g-link
+          to="/credits"
+          class="text-sm underline hover:text-pink-400 transition ease-in duration-200"
+          >Credits</g-link
         >
       </div>
       <div class="flex justify-between items-center">

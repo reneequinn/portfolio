@@ -6,9 +6,15 @@
 
 module.exports = {
   siteName: 'Renee Quinn',
+  siteDescription:
+    'Portfolio for Renee Quinn - front-end developer and UI/UX designer',
+  siteUrl: 'https://reneequinn.dev',
   plugins: [
     {
       use: 'gridsome-plugin-tailwindcss',
+    },
+    {
+      use: '@gridsome/plugin-sitemap',
     },
   ],
   chainWebpack: (config) => {
